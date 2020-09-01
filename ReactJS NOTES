@@ -1,0 +1,38 @@
+npx is needed to create the project
+
+npx create-react-app <project name>
+
+npm install create-react-app -g
+
+function calculator(a,b,c) {
+var operator = {
+    add:  a+b,
+    minus: a-b
+  };
+return operator[c];
+}
+
+switch(true) {
+	case 'Yellow': return "yellow";
+}
+
+/// state and life cycle
+
+Mounting
+
+[Initial state or default props]
+componentWillMount -> render -> componentDidMount
+
+Updating
+
+shouldComponent update -> true -> componentWillUpdate -> render -> componentDidUpdate
+shouldComponent update -> false -> stop
+
+Unmounting
+
+componentWillUnmount
+
+everything in render (react) must have a wrapper. (1 div);
+
+
+
