@@ -9,11 +9,14 @@ import Train from './Session3';
 import Clock from './Clock';
 import EventHandler from './EventHandler';
 import Form from './Form';
-
+import StylesPractice from './stylesPractice';
+import Registration from './react-registration/registration';
+import SchoolInformation from './SchoolInformation';
 ReactDOM.render(
 	<React.StrictMode>
-		<Form />
+		<Registration />
 	</React.StrictMode>,
+
 	document.getElementById('root')
 );
 

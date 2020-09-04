@@ -8,7 +8,7 @@ class Form extends React.Component {
 		super(props);
 		this.state = { isAnagram: false, firstString: '', secondString: '' };
 		this.checkIfAnagram = this.checkIfAnagram.bind(this);
-		this.setValue = this.setValue.bind(this);
+		this.setValue = this.setValue.bind(this); // this is optional if we're using the fat arrow
 	}
 
 	checkIfAnagram() {
