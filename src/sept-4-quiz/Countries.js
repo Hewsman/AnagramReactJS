@@ -46,29 +46,6 @@ class Countries extends React.Component {
 			)
 	}
 
-	getAllCountries = () => {
-		const requestOptions = {
-			method: 'GET'
-
-		};
-		fetch("https://restcountries.eu/rest/v2/all", requestOptions)
-			.then(res => res.json())
-			.then(
-				(result) => {
-					this.setState({
-						isLoaded: true,
-						items: result
-					});
-				},
-				(error) => {
-					this.setState({
-						isLoaded: true,
-						error
-					});
-				}
-			)
-	}
-
 
 	render() {
 		const allCountries = this.state.items.map(data =>
