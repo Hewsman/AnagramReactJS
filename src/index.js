@@ -12,9 +12,14 @@ import Form from './Form';
 import StylesPractice from './stylesPractice';
 import Registration from './react-registration/registration';
 import SchoolInformation from './SchoolInformation';
+import NativeAjax from './react-ajaxCall/native';
+import Mother from './containment/mother';
+import Countries from './sept-4-quiz/Countries';
+
 ReactDOM.render(
 	<React.StrictMode>
-		<Registration />
+		<Countries />
+		{/* <Mother /> */}
 	</React.StrictMode>,
 
 	document.getElementById('root')

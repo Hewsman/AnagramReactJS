@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+Countries -> Main Display (Component)
+	-> childDisplayProps -> Display ALL COUNTRIES via props
+		-> callingCode (propsValues of Calling Code nested inside childDisplayProps);
+
+CountriesAPI -> Service to fetch values from URL
+
+
+this.props (means it needs something to be passed to)
+
+
+
+/// analyzing containment ////
+
+
+MOTHER -> DISPLAY CHILD COMPONENT WITH BEHAVIOUR AS PROPS
+CHILD -> STRING DISPLAY {this.props.attitude} IS NEEDED
+
+// mother
+<Child attitude={ <behaviour elements="" /> } />
+
+elements can be found in the logic side not render
+
+so if we transform this into the quiz
+
+// Countries
+<ChildDisplayProps callingCode = {<CallingCode code="" /> } />
+
+props.something = INPUT equivalent
+

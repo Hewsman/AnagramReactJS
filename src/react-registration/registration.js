@@ -54,7 +54,7 @@ class Registration extends React.Component {
 	}
 	filterSchools = () => {
 		return schools.filter(e => {
-			return this.state.age <= e.maxAge && this.state.needsAircon === e.needsAircon && this.state.parentControl === e.parentControl && this.state.fullName == e.name
+			return this.state.age <= e.maxAge && this.state.needsAircon === e.needsAircon && this.state.parentControl === e.parentControl && this.state.fullName === e.name
 		});
 	}
 	render() {

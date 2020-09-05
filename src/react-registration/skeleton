@@ -1,0 +1,17 @@
+
+
+
+registration 
+
+has 2 children
+
+si finder and results.
+
+Finder has custom props -> 
+onFullnameChange 
+onAgeChange
+onAirconChange
+onParentChange
+info
+
+in order for finder form to render with props from registration (get values from child)
