@@ -40,7 +40,7 @@ class Countries extends React.Component {
 				(error) => {
 					this.setState({
 						isLoaded: true,
-						error
+						items: []
 					});
 				}
 			)
@@ -76,9 +76,19 @@ class Countries extends React.Component {
 		)
 		return (
 
-			<div>
-				<ChildDisplayProps callingCode={<CallingCode onCodeChange={this.handleCode} />} />
-				<ul>{allCountries}</ul>
+			<div> {
+				this.state.isLoaded
+					?
+					<div>
+						<ChildDisplayProps callingCode={<CallingCode onCodeChange={this.handleCode} />} />
+						<ul>{allCountries}</ul>
+					</div>
+					:
+					<div></div>
+			}
+
+
+
 			</div>
 		)
 	}
