@@ -15,11 +15,13 @@ import SchoolInformation from './SchoolInformation';
 import NativeAjax from './react-ajaxCall/native';
 import Mother from './containment/mother';
 import Countries from './sept-4-quiz/Countries';
+import Router from './routing/router';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Countries />
+		{/* <Countries /> */}
 		{/* <Mother /> */}
+		<Router />
 	</React.StrictMode>,
 
 	document.getElementById('root')

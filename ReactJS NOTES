@@ -34,5 +34,16 @@ componentWillUnmount
 
 everything in render (react) must have a wrapper. (1 div);
 
+react-router-dom
+
+
+<BrowserRouter>
+<div>
+ <Switch>
+  <Route path="/about" component={About} />
+  <Route path="/login" component={Login} />
+  <Route exact path="/" component={Properties} />
+  </Switch>
+</BrowserRouter>
 
 
